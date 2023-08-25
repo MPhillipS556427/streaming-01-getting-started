@@ -16,6 +16,7 @@ Use logging, very helpful when working with batch and streaming processes.
 
 import csv
 import logging
+import pwd
 
 # Set up basic configuration for logging
 
@@ -85,7 +86,7 @@ def process_rows(input_file_name, output_file_name):
 # If this is the script we are running, then call some functions and execute code!
 # ---------------------------------------------------------------------------
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     try:
         logging.info("===============================================")
         logging.info("Starting batch process A.")
@@ -94,3 +95,7 @@ if __name__ == "__main__":
         logging.info("===============================================")
     except Exception as e:
         logging.error(f"An error occurred: {e}")
+
+
+
+
